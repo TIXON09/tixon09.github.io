@@ -7,23 +7,11 @@
     <link rel="stylesheet" href="/static/style.css">
 </head>
 </body>
-    <h1>Обратная связь</h1>
-    <form method="POST" action="/submit">
-    <label>Ваше имя:</label>
-    <input type="text" name="username" required>
-
-    <label>Сообщение:</label>
-    <textarea name="message" rows="4" required></textarea>
-
-    <button type="submit">Отправить</button>
-    </form>
-    <h4><a href="/">На главную</a><br></h4>
-
-    {% if result %}
-    <div class="result">
-    <h3>Спасибо, {{ username }}</h3>
-    <p>Ваше сообщение: {{ message }}</p>
-    </div>
-    {% endif %}
+    <a>ГБПОУ НСО  "Новосибирский промышленно-энергетический колледж"</a>
+    <nav>
+        <a href="/">На главную</a>
+        <a href="/guide">Пособие</a>
+        <a href="/">Обратная связь</a>
+    </nav>
 </body>
 </html>
